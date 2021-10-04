@@ -1,0 +1,143 @@
+header{
+    line-height: 20px;
+    text-align: center;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "titulo" "navegador";
+    align-items: center;
+    nav{
+        .navHeader {
+            display: none;
+        }
+        .dropdown {
+            display: block;
+            margin-top: 0px;
+
+             button{
+                 color: 5px #2c3c89;
+                 background-image:  url(https://ak.picdn.net/shutterstock/videos/31113850/thumb/1.jpg); 
+                 background-repeat: inherit;}
+                 
+            ul{
+                
+                background-image:  url(https://ak.picdn.net/shutterstock/videos/31113850/thumb/1.jpg); 
+            
+            li{ 
+                background-image:  url(https://ak.picdn.net/shutterstock/videos/31113850/thumb/1.jpg); ;
+                border: 5px #2c3c89;
+                list-style: none;
+                a{
+                   color: white; 
+                   border: 5px #2c3c89;
+                   text-decoration: none;
+                }
+            }
+
+        }
+    }
+    }
+
+
+    .titulo{
+        grid-area: titulo;
+     a{
+        font-size: 300%;
+        font-family: nite;
+        text-decoration: none;
+        color: white;}
+/* Logo header */
+    .lalogo{
+            grid-area: imagen;
+            align-self: center;
+            width: 25vw;
+            transition: 0.7s;
+            filter: invert(100%);
+           }
+        }
+    
+
+    .logo{
+        grid-area:titulo;
+        width: 100px;
+        margin: 20px;
+        justify-self: start;
+        align-items: start;
+        }
+   
+
+
+}
+@media only  screen and (min-width:1024px){
+
+    header{
+        line-height: 20px;
+        text-align: center;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "titulo" "navegador";
+        align-items: center;
+    
+        nav{
+    
+            .navHeader {
+                grid-area: navegador;
+                display: block;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    li{
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        list-style: none;
+                        a{
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            color: white;
+                            text-decoration: none;
+                            transition: 0.5s;
+                            &:hover{
+                                color: #2c3c89 ;
+                            }
+                        }
+                    }
+                }
+        
+            }
+        
+            .dropdown {
+                display: none;
+            }
+    
+        }
+    
+        .titulo{
+            grid-area: titulo;
+            a{
+                font-size: 300%;
+                font-family: nite;
+                text-decoration: none;
+                color: white;
+            }
+            .lalogo{
+                grid-area: imagen;
+                align-self: center;
+                width: 25vw;
+                transition: 0.7s;
+                filter: invert(100%);
+            }
+        }
+        .logo{
+            grid-area:titulo;
+            width: 100px;
+            margin: 20px;
+            justify-self: start;
+            align-items: start;
+        }
+    }
+}

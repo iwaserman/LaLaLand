@@ -1,0 +1,110 @@
+.container {
+    .row {
+    display: flex;
+    flex-flow: column nowrap;
+
+    }
+
+    .col {
+        width: 100vh;
+       
+
+        h5 {
+            font-size: 24px;
+            text-align: center;
+            font-family:'Italiana', serif;
+            margin: 10px;
+        }
+             img {
+                width: 24vh;
+                margin-bottom: 10px;
+                align-items: center;
+                display: none;
+                
+                
+                .DescripcionPersonaje{
+                    font-size: 1em;
+                    align-self: center;
+                              }
+                }
+p {
+ font-size: 100%;
+ text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px)   {
+    .container {
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+        
+
+        .col {
+               width: 25%;
+               height: auto;
+               margin: 10px;
+               border: #fff solid 3px;
+               padding: 25px;
+            
+            h5 {
+                font-size: 30px;
+                text-align: center;
+
+               font-family:'Italiana', serif;
+                margin: 5px;
+            }
+
+            img {
+                    width: 90%;
+                    margin:auto;
+                    margin-bottom:10px;
+                    display:block;
+                }
+                   
+                       .DescripcionPersonaje{
+                           font-size: 1em;
+                           align-self: center;
+                                     }
+                 
+     
+       }
+
+}
+}
+}
+
+@media only screen and (max-width:536px)   {
+    .container {
+        .row {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .col {
+               width: 100vh;
+               border-top: 3px solid #2c3c89;;
+            }
+
+        h5 {
+                font-size: 50px;
+                text-align: center;
+                font-family:'Italiana', serif;
+                margin: 5px;
+            }
+
+            img {
+                display: none;                   
+                }
+                   
+                       .DescripcionPersonaje{
+                           font-size: 1em;
+                           align-self: center;
+                                     }
+                 
+     
+       }
+
+}
+

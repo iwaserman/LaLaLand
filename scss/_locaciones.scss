@@ -1,0 +1,29 @@
+.locaciones {
+    p {
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    }
+    
+}
+
+
+@media only  screen and (min-width:1024px){
+.locaciones {
+    p {
+    text-align: center;
+}
+iframe {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    }
+    
+}
+}

@@ -1,0 +1,57 @@
+/* Fotos*/
+.fotos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 15px;
+    img {
+        width: 100%;
+        color: gray;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: 0.4s;
+        img:hover{
+            border: 5px #2c3c89 double;
+            transform: scale(1.1);
+}
+    }
+}
+
+/* Carousel fotografia */
+.carousel {
+    display: none;
+}
+
+.carousel-inner {
+    width: auto;
+    margin: auto;
+    height: auto;
+
+img {
+    border: 5px double  #2c3c89;
+    width: auto;
+    margin: auto;
+   
+}
+}
+
+@media only  screen and (min-width:1024px){
+    .carousel {
+        display: block;
+    }
+
+.fotos {
+    img{
+        width: 800px;
+    }
+}
+}
+@media only  screen and (min-width:536px){
+
+.fotos {
+        img {
+        width: 100;
+    
+}
+}
+}
